@@ -1,2 +1,3 @@
-# spring-cloudconfig-wa-toll2
-spring-cloudconfig-wa-toll2
+# spring-hibernate
+- pluralsight: https://app.pluralsight.com/library/courses/spring-jpa-hibernate/table-of-contents
+- 
