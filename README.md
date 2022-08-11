@@ -6,6 +6,11 @@
 - Controller: annotated with @Controller, handle request/response, no business logic, coordinate with service and repository, handle exception and routing
 - Service: annotated with @Service, describes verds/actions of system, business logic belongs here, ensure business object state, transactional, often same methods as repository
 - Repository: annotated with @Repository, known as data of system, database interaction, 1-1 mapping object and 1-1 database table mapping.
+- have 2 type of Injection: Setter, Constructor
 
-- Type of Injection: Setter, Constructor
+# JPA (Java Persistence API) annotations
+- 
+- 
 
+# API Testing Endpoint:
+- http://localhost:8088/api/v1/user/info?firstname=anh&lastname=vo&age=25
