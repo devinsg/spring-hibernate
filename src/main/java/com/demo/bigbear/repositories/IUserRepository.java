@@ -5,7 +5,9 @@ import com.demo.bigbear.models.User;
 import java.util.List;
 
 public interface IUserRepository {
-    User save(User user);
+    User create(User user);
+
+    User update(User user);
 
     List<User> getList(String keyword);
 }

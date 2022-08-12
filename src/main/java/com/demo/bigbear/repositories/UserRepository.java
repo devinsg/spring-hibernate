@@ -13,8 +13,14 @@ public class UserRepository implements IUserRepository {
     private EntityManager entityManager;
 
     @Override
-    public User save(User user) {
+    public User create(User user) {
         entityManager.persist(user);
+        return user;
+    }
+
+    @Override
+    public User update(User user) {
+        entityManager.merge(user);
         return user;
     }
 

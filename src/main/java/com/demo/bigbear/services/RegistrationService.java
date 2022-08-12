@@ -25,12 +25,15 @@ public class RegistrationService implements IRegistrationService {
     public Registration addRegistration(Registration registration) {
         registration = registrationRepository.save(registration);
 
-        Course course = new Course();
-        course.setName("Intro");
-        course.setDescription("Everyone must attend The Introduction");
-        course.setRegistration(registration);
+        if (registration.getId().equals(null)) {
+            Course course = new Course();
+            course.setName("Intro");
+            course.setDescription("Everyone must attend The Introduction");
+            course.setRegistration(registration);
 
-        courseRepository.save(course);
+            courseRepository.save(course);
+        }
+
         return registration;
     }
 
