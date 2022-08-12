@@ -14,6 +14,16 @@
 - @Repository - database integration
 - @Transactional - beginning of transaction
 
+# Fetch Types
+- Lazy: db query when property is called
+- Eager: db query when object is created
+
+# Projection
+- projection is a great way to present objects to the UI.
+- objects added using JPQL (Java Persistence Query Language)
+- projection objects can be JPA Entities
+- will need constructor for the projection
+
 # JPQL (Java Persistence Query Language)
 - 
 - 

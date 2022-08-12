@@ -11,9 +11,9 @@ public class HomeController {
     @Value("${app.version}")
     private String appVersion;
 
-    @GetMapping("/status")
+    @GetMapping("api/status")
     public String greeting (Map<String, Object> model) {
-        model.put("version:", appVersion);
+        model.put("version", appVersion);
         return model.toString();
     }
 }
