@@ -8,7 +8,7 @@
 - Repository: annotated with @Repository, known as data of system, database interaction, 1-1 mapping object and 1-1 database table mapping.
 - have 2 type of Injection: Setter, Constructor
 
-# JPA (Java Persistence API) annotations
+# Some propular annotations from JPA (Java Persistence API)
 - @PersistentContext - inject entity manager
 - @Service - location of business logic
 - @Repository - database integration
@@ -24,9 +24,10 @@
 - projection objects can be JPA Entities
 - will need constructor for the projection
 
-# JPQL (Java Persistence Query Language)
-- 
-- 
+# Named Queries
+- cleaner then adhoc JPQL
+- not required but focuses on the domain
+- named parameters
 
 # API Testing Endpoint:
 - http://localhost:8088/api/v1/user/info?firstname=anh&lastname=vo&age=25

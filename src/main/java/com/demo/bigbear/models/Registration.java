@@ -9,7 +9,22 @@ import java.util.List;
 
 @Entity
 @Table(name = "conf_registration")
+@NamedQueries({
+        @NamedQuery(
+                name = Registration.REGISTRATION_REPORT,
+                query = Registration.REGISTRATION_REPORT_JPQL
+        )
+})
 public class Registration {
+
+    public static final String REGISTRATION_REPORT = "registrationReport";
+
+    public static final String REGISTRATION_REPORT_JPQL =
+            "SELECT new com.demo.bigbear.models.RegistrationReport " +
+            "(R.name, R.description, C.name, C.description, C.totalHours) " +
+            "FROM Registration R, Course C " +
+            "WHERE R.id = C.registration.id";
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

@@ -32,4 +32,9 @@ public class RegistrationRepository implements IRegistrationRepository {
                 "WHERE R.id = C.registration.id";
         return entityManager.createQuery(jpql).getResultList();
     }
+
+    @Override
+    public List<RegistrationReport> findAllReportByNamedQuery() {
+        return entityManager.createNamedQuery(Registration.REGISTRATION_REPORT).getResultList();
+    }
 }

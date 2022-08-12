@@ -9,4 +9,5 @@ public interface IRegistrationRepository {
     Registration save(Registration registration);
     List<Registration> findAll();
     List<RegistrationReport> findAllReport();
+    List<RegistrationReport> findAllReportByNamedQuery();
 }
