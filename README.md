@@ -32,3 +32,8 @@
 # API Testing Endpoint:
 - http://localhost:8088/api/v1/user/info?firstname=anh&lastname=vo&age=25
 
+# Questions & Answers:
+- the limitation of Spring JPA: 
+=> ability to create queries based on method names relies on a fixed set of keywords that can sometimes be insufficient.
+- the interface from Spring Data MongoDB contains methods that make use of low level bulk commands for insert, update, and remove on collections
+=> BulkOperations
