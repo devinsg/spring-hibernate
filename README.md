@@ -8,7 +8,7 @@
 - Repository: annotated with @Repository, known as data of system, database interaction, 1-1 mapping object and 1-1 database table mapping.
 - have 2 type of Injection: Setter, Constructor
 
-# Some propular annotations from JPA (Java Persistence API)
+# Some annotations from JPA (Java Persistence API)
 - @PersistentContext - inject entity manager
 - @Service - location of business logic
 - @Repository - database integration
